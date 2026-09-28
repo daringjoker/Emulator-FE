@@ -1,0 +1,80 @@
+.statusbar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background:#0c141a;
+    border-top:#027dff ridge 1px;
+    height:3.5vh;
+    font-size:0.9em;
+    margin:0px;
+    color:#AAAAAA;
+}
+.statusbar .msg .longmsg{
+    display:none;
+}
+.statusbar .msg:hover .shortmsg{
+    display:none;
+}
+.statusbar .msg:hover .longmsg{
+    display:block;
+}
+
+.heart{
+    color:red;
+    font-size:1.1em;
+    font-weight: 100;
+    text-shadow: 0px 0px 1px black;
+}
+
+.ourname{
+    font-weight: bold;
+    color:gold
+}
+
+.editing{
+    color:green;
+    font-weight: bold;
+}
+
+.editing::before{
+    content:"\1f589";
+    padding-right:3px;
+    color:#AAAAAA;
+}
+
+.emulating{
+    color:red;
+    font-weight: bold;
+}
+
+.emulating::before{
+    content:"\1F41E";
+    padding-right:3px;
+    /* color:#AAAAAA; */
+}
+
+.busy{
+    color:pink;
+    font-weight:bolder;
+    padding-right: 10px;
+}
+
+.busy::before{
+    content:"\2B24";
+    color:red;
+    text-shadow: 0px 0px 4px red;
+    padding-right:3px;
+}
+
+.idle{
+    color:pink;
+    font-weight:bolder;
+    padding-right: 10px;
+}
+
+.idle::before{
+    content:"\2B24";
+    color:green;
+    text-shadow: 0px 0px 4px greenyellow;
+    padding-right:3px;
+}

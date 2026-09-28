@@ -1,0 +1,156 @@
+.page{
+    box-sizing: border-box;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.822);
+    z-index:500;
+    margin:0;
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+}
+.titlebar{
+    position:relative;
+    height:35px;
+}
+
+.titlebar .ttext{
+    width:100%;
+    text-align: center;
+    font-size: 1.2em;
+    color:white;
+    font-weight: bold;
+    text-shadow: 0px 0px 15px white;
+}
+.closeBtn{
+    background:transparent;
+    outline:none;
+    border:none;
+    position:absolute;
+    right:20px;
+    top:5px;
+    font-size:30px;
+    color:#888;
+}
+.closeBtn:hover{
+    color:red;
+}
+.closeBtn:active{
+ color:black;
+}
+.backButton{
+    padding:0 5px;
+   border-radius:10px;
+    margin-right: 20px;
+    outline:none;
+    font-weight: bolder;
+}
+.dialogmain{
+    height:80%;
+    width:100%;
+}
+.dialogbody{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    height:100%;
+    width:100%;
+    /* background:yellow; */
+    overflow:auto;
+}
+
+.pathbar{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+.pathbar .pathToken{
+    display:flex;
+    flex-direction: row;
+    cursor:pointer;
+    
+}
+.pathbar .pathToken .text{
+    color:white;
+    padding:0 7px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border-left:solid 2px rgba(31,6,130,1);
+    background:linear-gradient(0deg, rgba(31,6,130,1) 0%, rgba(28,153,201,1) 40%, rgba(28,153,201,1) 60%, rgba(31,6,130,1) 100%);
+}
+
+.pathbar .pathToken .arrow{
+    width:20px;
+    height:100%;
+    background:rgba(31,6,130,1);
+    clip-path:polygon(100% 50%, 0 0, 0 100%);
+}
+
+.ExplorerItem{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    flex-direction: column;
+    margin:20px 5px;
+    padding:5px;
+    background-color: transparent;
+    outline:none;
+    border:none;
+    width:100px;
+    height:120px;
+    color:white;
+}
+.ExplorerItem img{
+    height: 50px;
+    width:50px;
+    filter:invert(1);
+    background-color: transparent;
+    }
+.ExplorerItem p{
+    word-wrap: break-word;
+    width:100px;
+    text-overflow: ellipsis;
+    overflow:hidden;
+}
+
+.finalbar{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.finalbar{
+    font-size:1.2em;
+    position:absolute;
+    padding-bottom:2%;
+    bottom:0px;
+    right:0px;
+    left:0px;
+}
+.finalbar #filename{
+width:100%;
+padding:3px;
+outline:none;
+border:solid black 2px;
+margin-right:30px;
+margin-left: 30px;
+border-radius: 5px;
+font-size:1em;
+}
+
+.finalbar button,input[type="submit"]{
+    font-size:1em;
+    margin:0 10px;
+    padding: 5px;
+    border-radius:5px;
+    outline:none;
+    background:linear-gradient(0deg, rgba(31,6,130,1) 0%, rgba(28,153,201,1) 40%, rgba(28,153,201,1) 60%, rgba(31,6,130,1) 100%);
+    color:white;
+}
+
+.selected{
+    background:rgba(0, 0, 0, 0.822);
+}

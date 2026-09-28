@@ -1,0 +1,43 @@
+.portsview{
+    background:#193549;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width:16%;
+    border-right:#AAAAAA solid 1px;
+
+}
+.portsview .heading{
+    text-align: center;
+    color:#AAAAAA;
+    background:#15232d;
+    margin:0;
+    padding:5px;
+    font-weight:bold;
+}
+.portsview .body{
+    overflow: auto;
+    height:100%;
+}
+.portsview .body::-webkit-scrollbar{
+    width:3px;
+    height:100%;
+}
+.portsview .body::-webkit-scrollbar-thumb{
+    border-radius:2px;
+    background:black;
+}
+.portsview .body table{
+    width:100%;
+}
+.portsview .body table .port_singles .address{
+    font-weight: bold;
+    text-align:center;
+}
+
+.portsview .portvalue{
+    font-family: monospace;
+    padding:0.5%;
+    text-align:right;
+}

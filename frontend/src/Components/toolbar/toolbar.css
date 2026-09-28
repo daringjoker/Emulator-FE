@@ -1,0 +1,33 @@
+.toolbar{
+    width:max-content;
+    display:flex;
+    flex-direction:column;
+    background:#15232d;
+}
+.toolbar div{
+    display:flex;
+    flex-direction: column;
+}
+.toolbar button{
+    width:25px;
+    height:25px;
+    padding:3px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:3px;
+    border:none;
+    outline:none;
+    background:transparent;
+}
+.toolbar button:hover img{
+    filter:drop-shadow(0px 0px 5px gray);
+}
+.toolbar button:active img{
+    transform-origin: center;
+    transform:scale(0.7);
+}
+.toolbar button img{
+    height:80%;
+    width:80%;
+}

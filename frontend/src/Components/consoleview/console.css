@@ -1,0 +1,53 @@
+.consolebox{
+    width:58%;
+    background:#15232d;
+    padding:5px 10px;
+}
+.console{
+    background:#193549;
+    width:100%;
+    padding:10px;
+    height:100%;
+    overflow-wrap:break-word;
+    overflow-y:auto;
+}
+.console::-webkit-scrollbar{
+    width:3px;
+    height:100%;
+}
+.console::-webkit-scrollbar-thumb{
+    border-radius:2px;
+    background:black;
+}
+
+.console .line_error{
+    padding-bottom:10px;
+}
+
+.console .line_error .line_number{
+    color:red;
+    font-weight: bolder;
+    
+}
+.console .line_error .errors{
+    padding-left: 5%;
+}
+
+.console .line_error .errors .error{
+    /* font-size:0.9em; */
+    font-family: monospace;
+    padding-bottom: 5px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width:max-content;
+}
+.console .line_error .errors .error .errorno{
+    font-weight: bold;
+    color:gray;
+    padding-right: 10px;
+}
+.console .line_error .errors .error .errtext{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}

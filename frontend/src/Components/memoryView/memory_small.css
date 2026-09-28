@@ -1,0 +1,86 @@
+.memoryview{
+    background:#193549;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width:16%;
+    border-right:#AAAAAA solid 1px;
+    /* min-width: max-content; */
+}
+.memoryview .heading{
+    text-align: center;
+    color:#AAAAAA;
+    background:#15232d;
+    margin:0;
+    padding:5px;
+    font-weight:bold;
+}
+.memoryview .body{
+    scrollbar-width: 3px;
+    overflow: auto;
+    height:100%;
+}
+.memoryview .body::-webkit-scrollbar{
+    width:3px;
+    height:100%;
+}
+.memoryview .body::-webkit-scrollbar-thumb{
+    border-radius:2px;
+    background:black;
+}
+.memoryview .body table{
+    width:100%;
+}
+.memoryview .body table .mem_singles .address{
+    font-weight: bold;
+    text-align:center;
+}
+
+.memoryview .memvalue{
+    font-family: monospace;
+    padding:0.5%;
+    text-align:right;
+}
+
+.inprow{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background:#15232d;
+    margin:0;
+    padding:5px;
+}
+.inprow input{
+    width:40%;
+    margin:0;
+    padding:0;
+    outline:none;
+    border-radius:3px;
+    /* font-size:0.75em; */
+    background:#193549;
+    font-weight: bold;
+    border:none;
+    padding:2px 5px;
+}
+.inprow button{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin:0;
+    outline:none;
+    border:none;
+    background:transparent;
+}
+.inprow button img{
+    height:1em;
+    width:1.5em;
+    }
+
+.inprow button:hover img{
+    filter:drop-shadow(0px 0px 5px gray);
+}
+.inprow button:active img{
+    transform-origin: center;
+    transform:scale(0.7);
+}
